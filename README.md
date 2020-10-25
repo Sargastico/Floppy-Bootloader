@@ -17,4 +17,4 @@ Install NASM (Ubuntu):
 
 How to use:
 
-```nasm -f bin boot.asm -o boot.bin && qemu-system-x86_64 -fda boot```
+```nasm -f bin boot.asm -o boot.bin && qemu-system-x86_64 -fda boot.bin```
