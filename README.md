@@ -9,12 +9,12 @@ You will need NASM and QEMU to test it. You will also need support to KVM.
 
 Install QEMU (Ubuntu):
 
-'sudo apt-get install qemu-kvm qemu virt-manager virt-viewer'
+```sudo apt-get install qemu-kvm qemu virt-manager virt-viewer```
 
 Install NASM (Ubuntu):
 
-'apt install nasm'
+```apt install nasm```
 
 How to use:
 
-'nasm -f bin boot3.asm -o boot.bin && qemu-system-x86_64 -fda boot.bin'
+```nasm -f bin boot3.asm -o boot.bin && qemu-system-x86_64 -fda boot.bin```
