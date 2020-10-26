@@ -14,7 +14,7 @@ boot:
 	cli
 	lgdt [gdt_pointer]                  ; LOAD GDT TABLE
 	mov eax, cr0                                            
-	or eax, 0x1                         ; SET THE PROTECTED MODE SET THE PROTECTED MODE BIT ON SPECIAL CPU REG CR0
+	or eax, 0x1                         ; SET THE PROTECTED MODE BIT ON SPECIAL CPU REG CR0
 	mov cr0, eax
 	jmp CODE_SEG:boot2                  ; JUMP TO CODE SEGMENT
 
